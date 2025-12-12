@@ -2,15 +2,61 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página Personal</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-        h1 { color: #2ea44f; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>¡Hola mundo!</h1>
-    <p>Bienvenido a mi sitio web personal alojado en GitHub Pages.</p>
-    <p>Esta página está en construcción 🚧</p>
+
+    <header>
+        <nav>
+            <div class="logo">MiPortafolio.</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hola, soy <span class="gradient-text">Tu Nombre</span></h1>
+                <p id="typewriter">Desarrollador Web & Creativo</p>
+                <a href="#contacto" class="btn">Contáctame</a>
+            </div>
+        </section>
+
+        <section id="proyectos" class="container">
+            <h2>Mis Proyectos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Proyecto Alpha</h3>
+                    <p>Una breve descripción de tu proyecto increíble. Tecnología usada: HTML, CSS.</p>
+                </div>
+                <div class="card">
+                    <h3>Proyecto Beta</h3>
+                    <p>Aplicación web reactiva con diseño moderno. Tecnología usada: JavaScript.</p>
+                </div>
+                <div class="card">
+                    <h3>Proyecto Gamma</h3>
+                    <p>Script de automatización en Python alojado en la nube.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>Creado con ❤️ y café. &copy; 2025</p>
+        <div class="socials">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
